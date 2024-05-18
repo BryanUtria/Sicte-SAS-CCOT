@@ -38,37 +38,37 @@ export const Rutas = () => {
       <div>
         <Routes>
           <Route path='*' element={<Inicio />} />
-          <Route exact path='#/CCOT' element={<Inicio />} />
-          <Route exact path='#/CCOT/CorporativoFinanciero' element={<CorporativoFinanciero/>} />
-          <Route exact path='#/CCOT/CorporativoPuntuacion' element={<CorporativoPuntuacion />} />
-          <Route exact path='#/CCOT/Centro_de_costos' element={<CentrosDeCostos />} />
-          <Route exact path='#/CCOT/CorporativoFacturacion' element={<CorporativoFacturacion />} />
-          <Route exact path='#/CCOT/ConsolidadoNacionalFacturacion' element={<FacturacionConsolidado />} />
-          <Route exact path='#/CCOT/Compras' element={<Compras />} />
-          <Route exact path='#/CCOT/HistoricoKPI' element={<HistoricoKPI />} />
-          <Route exact path='#/CCOT/MantenimientoTecnico' element={<MantenimientoTecnico />} />
-          <Route exact path='#/CCOT/MantenimientoFinanciero' element={<MantenimientoFinanciero />} />
-          <Route exact path='#/CCOT/MantenimientoPuntuacion' element={<MantenimientoPuntuacion />} />
-          <Route exact path='#/CCOT/MantenimientoPuntuacionTMRF' element={<MantenimientoPuntuacionTMRF />} />
-          <Route exact path='#/CCOT/MantenimientoFacturacion' element={<MantenimientoFacturacion />} />
-          <Route exact path='#/CCOT/MantenimientoBacklogFO' element={<BacklogFO />} />
-          <Route exact path='#/CCOT/MantenimientoBacklogHFC' element={<BacklogHFC />} />
-          <Route exact path='#/CCOT/Mintic' element={<Mintic />} />
-          <Route exact path='#/CCOT/Moviles' element={<Moviles />} />
-          <Route exact path='#/CCOT/NPS' element={<NPS />} />
-          <Route exact path='#/CCOT/OperacionesFinanciero' element={<OperacionesFinanciero />} />
-          <Route exact path='#/CCOT/OperacionesFacturacion' element={<OperacionesFacturacion />} />
-          <Route exact path='#/CCOT/OperacionesPuntuacion' element={<OperacionesPuntuacion />} />
-          <Route exact path='#/CCOT/PlaneacionFinanciero' element={<PlaneacionFinanciero />} />
-          <Route exact path='#/CCOT/PlaneacionPuntuacion' element={<PlaneacionPuntuacion />} />
-          <Route exact path='#/CCOT/PlaneacionFacturacion' element={<PlaneacionFacturacion />} />
-          <Route exact path='#/CCOT/ReporteCorporativo' element={<ReporteCorporativo />} />
-          <Route exact path='#/CCOT/ReportePlaneacion' element={<ReportePlaneacion/>} />
-          <Route exact path='#/CCOT/ReingenieriaFinanciero' element={<ReingenieriaFinanciero />} />
-          <Route exact path='#/CCOT/ReingenieriasPuntuacion' element={<ReingenieriasPuntuacion />} />
-          <Route exact path='#/CCOT/Seguimiento' element={<Seguimiento />} />
-          <Route exact path='#/CCOT/SeguimientoProyectos' element={<SeguimientoProyectos/>} />
-          <Route exact path='#/CCOT/TorreDeControl' element={<TorreControl />} />
+          <Route exact path='/ReportingCenter' element={<Inicio />} />
+          <Route exact path='/ReportingCenter/CorporativoFinanciero' element={<CorporativoFinanciero/>} />
+          <Route exact path='/ReportingCenter/CorporativoPuntuacion' element={<CorporativoPuntuacion />} />
+          <Route exact path='/ReportingCenter/Centro_de_costos' element={<CentrosDeCostos />} />
+          <Route exact path='/ReportingCenter/CorporativoFacturacion' element={<CorporativoFacturacion />} />
+          <Route exact path='/ReportingCenter/ConsolidadoNacionalFacturacion' element={<FacturacionConsolidado />} />
+          <Route exact path='/ReportingCenter/Compras' element={<Compras />} />
+          <Route exact path='/ReportingCenter/HistoricoKPI' element={<HistoricoKPI />} />
+          <Route exact path='/ReportingCenter/MantenimientoTecnico' element={<MantenimientoTecnico />} />
+          <Route exact path='/ReportingCenter/MantenimientoFinanciero' element={<MantenimientoFinanciero />} />
+          <Route exact path='/ReportingCenter/MantenimientoPuntuacion' element={<MantenimientoPuntuacion />} />
+          <Route exact path='/ReportingCenter/MantenimientoPuntuacionTMRF' element={<MantenimientoPuntuacionTMRF />} />
+          <Route exact path='/ReportingCenter/MantenimientoFacturacion' element={<MantenimientoFacturacion />} />
+          <Route exact path='/ReportingCenter/MantenimientoBacklogFO' element={<BacklogFO />} />
+          <Route exact path='/ReportingCenter/MantenimientoBacklogHFC' element={<BacklogHFC />} />
+          <Route exact path='/ReportingCenter/Mintic' element={<Mintic />} />
+          <Route exact path='/ReportingCenter/Moviles' element={<Moviles />} />
+          <Route exact path='/ReportingCenter/NPS' element={<NPS />} />
+          <Route exact path='/ReportingCenter/OperacionesFinanciero' element={<OperacionesFinanciero />} />
+          <Route exact path='/ReportingCenter/OperacionesFacturacion' element={<OperacionesFacturacion />} />
+          <Route exact path='/ReportingCenter/OperacionesPuntuacion' element={<OperacionesPuntuacion />} />
+          <Route exact path='/ReportingCenter/PlaneacionFinanciero' element={<PlaneacionFinanciero />} />
+          <Route exact path='/ReportingCenter/PlaneacionPuntuacion' element={<PlaneacionPuntuacion />} />
+          <Route exact path='/ReportingCenter/PlaneacionFacturacion' element={<PlaneacionFacturacion />} />
+          <Route exact path='/ReportingCenter/ReporteCorporativo' element={<ReporteCorporativo />} />
+          <Route exact path='/ReportingCenter/ReportePlaneacion' element={<ReportePlaneacion/>} />
+          <Route exact path='/ReportingCenter/ReingenieriaFinanciero' element={<ReingenieriaFinanciero />} />
+          <Route exact path='/ReportingCenter/ReingenieriasPuntuacion' element={<ReingenieriasPuntuacion />} />
+          <Route exact path='/ReportingCenter/Seguimiento' element={<Seguimiento />} />
+          <Route exact path='/ReportingCenter/SeguimientoProyectos' element={<SeguimientoProyectos/>} />
+          <Route exact path='/ReportingCenter/TorreDeControl' element={<TorreControl />} />
         </Routes>
       </div>
     </BrowserRouter>
