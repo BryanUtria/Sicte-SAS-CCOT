@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Sicte-SAS-CCOT/static/css/main.ca6e2cac.css",
-    "main.js": "/Sicte-SAS-CCOT/static/js/main.a1ba7141.js",
+    "main.css": "/Sicte-SAS-CCOT/static/css/main.293fdb2c.css",
+    "main.js": "/Sicte-SAS-CCOT/static/js/main.ed1b6fbe.js",
     "static/media/01.jpg": "/Sicte-SAS-CCOT/static/media/01.90f3a9eed9bfbe9d97b2.jpg",
     "index.html": "/Sicte-SAS-CCOT/index.html",
-    "main.ca6e2cac.css.map": "/Sicte-SAS-CCOT/static/css/main.ca6e2cac.css.map",
-    "main.a1ba7141.js.map": "/Sicte-SAS-CCOT/static/js/main.a1ba7141.js.map"
+    "main.293fdb2c.css.map": "/Sicte-SAS-CCOT/static/css/main.293fdb2c.css.map",
+    "main.ed1b6fbe.js.map": "/Sicte-SAS-CCOT/static/js/main.ed1b6fbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca6e2cac.css",
-    "static/js/main.a1ba7141.js"
+    "static/css/main.293fdb2c.css",
+    "static/js/main.ed1b6fbe.js"
   ]
 }
