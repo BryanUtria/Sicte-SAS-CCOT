@@ -50,6 +50,7 @@ const CCOTRoutes = () => {
   return (
     <div>
       <Routes>
+        <Route path='*' element={<Inicio />} />
         <Route path='/CCOT' element={<Inicio />} />
         <Route path='/CorporativoFinanciero' element={<CorporativoFinanciero/>} />
         <Route path='/CorporativoPuntuacion' element={<CorporativoPuntuacion />} />
