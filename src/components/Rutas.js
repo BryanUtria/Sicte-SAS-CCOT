@@ -37,38 +37,38 @@ export const Rutas = () => {
   return (
     <Router>
       <Routes>
-        <Route path='*' element={<Inicio />} />
-        <Route path='/CCOT' element={<Inicio />} />
-        <Route path='/CorporativoFinanciero' element={<CorporativoFinanciero/>} />
-        <Route path='/CorporativoPuntuacion' element={<CorporativoPuntuacion />} />
-        <Route path='/Centro_de_costos' element={<CentrosDeCostos />} />
-        <Route path='/CorporativoFacturacion' element={<CorporativoFacturacion />} />
-        <Route path='/ConsolidadoNacionalFacturacion' element={<FacturacionConsolidado />} />
-        <Route path='/Compras' element={<Compras />} />
-        <Route path='/HistoricoKPI' element={<HistoricoKPI />} />
-        <Route path='/MantenimientoTecnico' element={<MantenimientoTecnico />} />
-        <Route path='/MantenimientoFinanciero' element={<MantenimientoFinanciero />} />
-        <Route path='/MantenimientoPuntuacion' element={<MantenimientoPuntuacion />} />
-        <Route path='/MantenimientoPuntuacionTMRF' element={<MantenimientoPuntuacionTMRF />} />
-        <Route path='/MantenimientoFacturacion' element={<MantenimientoFacturacion />} />
-        <Route path='/MantenimientoBacklogFO' element={<BacklogFO />} />
-        <Route path='/MantenimientoBacklogHFC' element={<BacklogHFC />} />
-        <Route path='/Mintic' element={<Mintic />} />
-        <Route path='/Moviles' element={<Moviles />} />
-        <Route path='/NPS' element={<NPS />} />
-        <Route path='/OperacionesFinanciero' element={<OperacionesFinanciero />} />
-        <Route path='/OperacionesFacturacion' element={<OperacionesFacturacion />} />
-        <Route path='/OperacionesPuntuacion' element={<OperacionesPuntuacion />} />
-        <Route path='/PlaneacionFinanciero' element={<PlaneacionFinanciero />} />
-        <Route path='/PlaneacionPuntuacion' element={<PlaneacionPuntuacion />} />
-        <Route path='/PlaneacionFacturacion' element={<PlaneacionFacturacion />} />
-        <Route path='/ReporteCorporativo' element={<ReporteCorporativo />} />
-        <Route path='/ReportePlaneacion' element={<ReportePlaneacion/>} />
-        <Route path='/ReingenieriaFinanciero' element={<ReingenieriaFinanciero />} />
-        <Route path='/ReingenieriasPuntuacion' element={<ReingenieriasPuntuacion />} />
-        <Route path='/Seguimiento' element={<Seguimiento />} />
-        <Route path='/SeguimientoProyectos' element={<SeguimientoProyectos/>} />
-        <Route path='/TorreDeControl' element={<TorreControl />} />
+        <Route path='/' exect element={<Inicio />} />
+        <Route path='/CCOT' exect element={<Inicio />} />
+        <Route path='/CorporativoFinanciero' exect element={<CorporativoFinanciero/>} />
+        <Route path='/CorporativoPuntuacion' exect element={<CorporativoPuntuacion />} />
+        <Route path='/Centro_de_costos' exect element={<CentrosDeCostos />} />
+        <Route path='/CorporativoFacturacion' exect element={<CorporativoFacturacion />} />
+        <Route path='/ConsolidadoNacionalFacturacion' exect element={<FacturacionConsolidado />} />
+        <Route path='/Compras' exect element={<Compras />} />
+        <Route path='/HistoricoKPI' exect element={<HistoricoKPI />} />
+        <Route path='/MantenimientoTecnico' exect element={<MantenimientoTecnico />} />
+        <Route path='/MantenimientoFinanciero' exect element={<MantenimientoFinanciero />} />
+        <Route path='/MantenimientoPuntuacion' exect element={<MantenimientoPuntuacion />} />
+        <Route path='/MantenimientoPuntuacionTMRF' exect element={<MantenimientoPuntuacionTMRF />} />
+        <Route path='/MantenimientoFacturacion' exect element={<MantenimientoFacturacion />} />
+        <Route path='/MantenimientoBacklogFO' exect element={<BacklogFO />} />
+        <Route path='/MantenimientoBacklogHFC' exect element={<BacklogHFC />} />
+        <Route path='/Mintic' exect element={<Mintic />} />
+        <Route path='/Moviles' exect element={<Moviles />} />
+        <Route path='/NPS' exect element={<NPS />} />
+        <Route path='/OperacionesFinanciero' exect element={<OperacionesFinanciero />} />
+        <Route path='/OperacionesFacturacion' exect element={<OperacionesFacturacion />} />
+        <Route path='/OperacionesPuntuacion' exect element={<OperacionesPuntuacion />} />
+        <Route path='/PlaneacionFinanciero' exect element={<PlaneacionFinanciero />} />
+        <Route path='/PlaneacionPuntuacion' exect element={<PlaneacionPuntuacion />} />
+        <Route path='/PlaneacionFacturacion' exect element={<PlaneacionFacturacion />} />
+        <Route path='/ReporteCorporativo' exect element={<ReporteCorporativo />} />
+        <Route path='/ReportePlaneacion' exect element={<ReportePlaneacion/>} />
+        <Route path='/ReingenieriaFinanciero' exect element={<ReingenieriaFinanciero />} />
+        <Route path='/ReingenieriasPuntuacion' exect element={<ReingenieriasPuntuacion />} />
+        <Route path='/Seguimiento' exect element={<Seguimiento />} />
+        <Route path='/SeguimientoProyectos' exect element={<SeguimientoProyectos/>} />
+        <Route path='/TorreDeControl' exect element={<TorreControl />} />
       </Routes>
     </Router>
   );

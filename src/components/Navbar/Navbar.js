@@ -4,7 +4,7 @@ import './Navbar.css'
 import {FaBars, FaTimes, FaHome, FaFileInvoice, FaIndustry, FaChartLine, FaStar, FaTools, FaBuilding, FaChevronDown, FaChevronUp} from 'react-icons/fa';
 
 export const Navbar = () => {
-    const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(true);
     const [showDropdownFacturacion, setShowDropdownFacturacion] = useState(false);
     const [showDropdownProduccion, setShowDropdownProduccion] = useState(false);
     const [showDropdownIndicadores, setShowDropdownIndicadores] = useState(false);
