@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/CCOT/static/css/main.ca6e2cac.css",
-    "main.js": "/CCOT/static/js/main.c49e5d04.js",
+    "main.js": "/CCOT/static/js/main.aeb001af.js",
     "static/media/01.jpg": "/CCOT/static/media/01.90f3a9eed9bfbe9d97b2.jpg",
     "index.html": "/CCOT/index.html",
     "main.ca6e2cac.css.map": "/CCOT/static/css/main.ca6e2cac.css.map",
-    "main.c49e5d04.js.map": "/CCOT/static/js/main.c49e5d04.js.map"
+    "main.aeb001af.js.map": "/CCOT/static/js/main.aeb001af.js.map"
   },
   "entrypoints": [
     "static/css/main.ca6e2cac.css",
-    "static/js/main.c49e5d04.js"
+    "static/js/main.aeb001af.js"
   ]
 }
