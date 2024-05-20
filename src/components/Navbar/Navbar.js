@@ -1,187 +1,300 @@
 import React, { useState } from 'react'
-import {
-    Container,
-    LogoContainer,
-    Menu,
-    MobileIcon,
-    Wrapper,
-    DropDownContent,
-    DropDownLi,
-    StyledSubMenu,
-    SubMenu
-} from './Narbar.elements';
-import {
-    FaBars,
-    FaTimes
-} from "react-icons/fa";
-import { IconContext } from 'react-icons';
+import './Navbar.css'
+import {FaBars, FaTimes, FaHome, FaFileInvoice, FaIndustry, FaChartLine, FaStar, FaTools, FaBuilding, FaChevronDown, FaChevronUp} from 'react-icons/fa';
 
-
-
-const Navbar = () => {
+export const Navbar = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const [showDropdownFacturacion, setShowDropdownFacturacion] = useState(false);
+    const [showDropdownProduccion, setShowDropdownProduccion] = useState(false);
+    const [showDropdownIndicadores, setShowDropdownIndicadores] = useState(false);
+    const [showDropdownPuntuacion, setShowDropdownPuntuacion] = useState(false);
+    const [showDropdownMantenimiento, setShowDropdownMantenimiento] = useState(false);
+    const [showDropdownDireccion, setShowDropdownDireccion] = useState(false);
 
     return (
-        <Container>
-            <Wrapper>
-                <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
+        <div id='Contenedor'>
+            <div id='Icono-Menu' onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                {
+                    showMobileMenu ? <FaTimes /> : <FaBars />
+                }
+            </div> 
 
-                    <LogoContainer>
-                        <p>
-                            Sicte CCOT
-                        </p>
-                        <p>
-                            Centro de Control de Operaciones Técnicas
-                        </p>
-                    </LogoContainer>
-                    <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                        {
-                            showMobileMenu ? <FaTimes /> : <FaBars />
-                        }
-                    </MobileIcon>   
-                    <Menu open={showMobileMenu}>
+            <div id='Titulo'>
+                <p>
+                    Sicte CCOT
+                </p>
+                <p>
+                    Centro de Control de Operaciones Técnicas
+                </p>
+            </div>  
 
-                        <DropDownLi>
-                            <StyledSubMenu to='/MantenimientoFacturacion'>
-                                Facturación
-                            </StyledSubMenu>
-                            <DropDownContent>
-                                <SubMenu to='/ConsolidadoNacionalFacturacion'>
-                                    Consolidado nacional
-                                </SubMenu>
-                                <SubMenu to='/PlaneacionFacturacion'>
-                                    Proyectos
-                                </SubMenu>
-                                <SubMenu to='/SeguimientoProyectos'>
-                                    Seguimiento proyectos
-                                </SubMenu>
-                                <SubMenu to='/CorporativoFacturacion'>
-                                    Corporativo
-                                </SubMenu>
-                                <SubMenu to='/MantenimientoFacturacion'>
-                                    Mantenimiento
-                                </SubMenu>
-                                <SubMenu to='/OperacionesFacturacion'>
-                                    Operaciones
-                                </SubMenu>
-                            </DropDownContent>
-                        </DropDownLi>
+            {showMobileMenu && (
+                <div id='MenuContainer' className={showMobileMenu ? 'open' : 'closed'}>
+                    <ul id='Menu'>
+                        <li id='SubMenu'>
+                            <a id='SubMenu-Titulo' href='/ReportingCenter'>
+                                <span id='SubMenu-Titulo-Icono'><FaHome/></span>
+                                <span id="SubMenu-Titulo-Texto">Inicio</span>
+                            </a>      
+                        </li>
 
-                        <DropDownLi>
-                            <StyledSubMenu to='/PlaneacionFinanciero'>
-                                Producción
-                            </StyledSubMenu>
-                            <DropDownContent>
-                                <SubMenu to='/PlaneacionFinanciero'>
-                                    Proyectos
-                                </SubMenu>
-                                <SubMenu to='/CorporativoFinanciero'>
-                                    Corporativo
-                                </SubMenu>
-                                <SubMenu to='/MantenimientoFinanciero'>
-                                    Mantenimiento
-                                </SubMenu>
-                                <SubMenu to='/ReingenieriaFinanciero'>
-                                    Reingenierias
-                                </SubMenu>
-                                <SubMenu to='/OperacionesFinanciero'>
-                                    Operaciones
-                                </SubMenu>
-                                
-                            </DropDownContent>
-                        </DropDownLi>
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownFacturacion(!showDropdownFacturacion)}>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaFileInvoice/></span>
+                                    <span id="SubMenu-Titulo-Texto">Facturación</span>
+                                    <span id="SubMenu-Titulo-Icono2">
+                                        {
+                                            showDropdownFacturacion ? <FaChevronUp /> : <FaChevronDown />
+                                        }
+                                    </span>
+                                </span>
+                            </div>
+                            {showDropdownFacturacion && (
+                                <div id='SubMenu-Contenido'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/ConsolidadoNacionalFacturacion'>
+                                        Consolidado nacional
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/PlaneacionFacturacion'>
+                                        Proyectos
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/SeguimientoProyectos'>
+                                        Seguimiento proyectos
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/CorporativoFacturacion'>
+                                        Corporativo
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/MantenimientoFacturacion'>
+                                        Mantenimiento
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/OperacionesFacturacion'>
+                                        Operaciones
+                                    </a>
+                                </div>
+                            )}
+                        </li>
 
-                        <DropDownLi>
-                            <StyledSubMenu to='/MantenimientoTecnico'>
-                                Indicadores
-                            </StyledSubMenu>
-                            <DropDownContent>
-                                <SubMenu to='/HistoricoKPI'>
-                                    Histórico KPI 
-                                </SubMenu>
-                                <SubMenu to='/MantenimientoTecnico'>
-                                    G1 Mantenimiento
-                                </SubMenu>
-                                <SubMenu to='/Mintic'>
-                                    G5 MINTIC
-                                </SubMenu>
-                                <SubMenu to='/NPS'>
-                                    NPS
-                                </SubMenu>
-                            </DropDownContent>
-                        </DropDownLi>
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownProduccion(!showDropdownProduccion)}>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaIndustry/></span>
+                                    <span id="SubMenu-Titulo-Texto">Producción</span>
+                                    <span id="SubMenu-Titulo-Icono2">
+                                        {
+                                            showDropdownProduccion ? <FaChevronUp /> : <FaChevronDown />
+                                        }
+                                    </span>
+                                </span>
+                            </div>
+                            {showDropdownProduccion && (
+                                <div id='SubMenu-Contenido'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/PlaneacionFinanciero'>
+                                        Proyectos
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/CorporativoFinanciero'>
+                                        Corporativo
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/MantenimientoFinanciero'>
+                                        Mantenimiento
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/ReingenieriaFinanciero'>
+                                        Reingenierias
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/OperacionesFinanciero'>
+                                        Operaciones
+                                    </a>
+                                </div>
+                            )}
+                        </li>
+
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownIndicadores(!showDropdownIndicadores)}>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaChartLine/></span>
+                                    <span id="SubMenu-Titulo-Texto">Indicadores</span>
+                                    <span id="SubMenu-Titulo-Icono2">
+                                        {
+                                            showDropdownIndicadores ? <FaChevronUp /> : <FaChevronDown />
+                                        }
+                                    </span>
+                                </span>
+                            </div>
+                            {showDropdownIndicadores && (
+                                <div id='SubMenu-Contenido'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/HistoricoKPI'>
+                                        Histórico KPI 
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/MantenimientoTecnico'>
+                                        G1 Mantenimiento
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/Mintic'>
+                                        G5 MINTIC
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/NPS'>
+                                        NPS - Contraseña: 4434
+                                    </a>
+                                </div>
+                            )}
+                        </li>
                             
-                        <DropDownLi>
-                            <StyledSubMenu to='/PlaneacionTecnico'>
-                                Puntuación
-                            </StyledSubMenu>
-                            <DropDownContent>
-                                
-                                <SubMenu to='/PlaneacionPuntuacion'>
-                                    Proyectos
-                                </SubMenu>
-                                <SubMenu to='/CorporativoPuntuacion'>
-                                    Corporativo
-                                </SubMenu>
-                                <SubMenu to='/MantenimientoPuntuacion'>
-                                    Mantenimiento
-                                </SubMenu>
-                                <SubMenu to='/ReingenieriasPuntuacion'>
-                                    Reingenierias
-                                </SubMenu>
-                                <SubMenu to='/OperacionesPuntuacion'>
-                                    Operaciones
-                                </SubMenu>
-                            </DropDownContent> 
-                        </DropDownLi>
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownPuntuacion(!showDropdownPuntuacion)}>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaStar/></span>
+                                    <span id="SubMenu-Titulo-Texto">Puntuación</span>
+                                    <span id="SubMenu-Titulo-Icono2">
+                                        {
+                                            showDropdownPuntuacion ? <FaChevronUp /> : <FaChevronDown />
+                                        }
+                                    </span>
+                                </span>
+                            </div>
+                            {showDropdownPuntuacion && (
+                                <div id='SubMenu-Contenido'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/PlaneacionPuntuacion'>
+                                        Proyectos
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/CorporativoPuntuacion'>
+                                        Corporativo
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/MantenimientoPuntuacion'>
+                                        Mantenimiento
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/ReingenieriasPuntuacion'>
+                                        Reingenierias
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/OperacionesPuntuacion'>
+                                        Operaciones
+                                    </a>
+                                </div> 
+                            )}
+                        </li>
 
-                        <DropDownLi>
-                            <StyledSubMenu to='/MantenimientoTecnico'>
-                                Mantenimiento
-                            </StyledSubMenu>
-                            <DropDownContent>
-                                
-                                <SubMenu to='/MantenimientoBacklogFO'>
-                                    Cumplimiento SLA FO
-                                </SubMenu>
-                                <SubMenu to='/MantenimientoBacklogHFC'>
-                                    Cumplimiento SLA HFC
-                                </SubMenu>
-                                <SubMenu to='/MantenimientoPuntuacionTMRF'>
-                                    Correctivo - Preventivo
-                                </SubMenu>
-                                <SubMenu to='/Seguimiento'>
-                                    Seguimiento
-                                </SubMenu>
-                                <SubMenu to='/TorreDeControl'>
-                                    Torre de control
-                                </SubMenu>
-                            </DropDownContent>
-                        </DropDownLi>
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownMantenimiento(!showDropdownMantenimiento)}>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaTools/></span>
+                                    <span id="SubMenu-Titulo-Texto">Mantenimiento</span>
+                                    <span id="SubMenu-Titulo-Icono2">
+                                        {
+                                            showDropdownMantenimiento ? <FaChevronUp /> : <FaChevronDown />
+                                        }
+                                    </span>
+                                </span>
+                            </div>
+                            {showDropdownMantenimiento && (
+                                <div id='SubMenu-Contenido'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/MantenimientoBacklogFO'>
+                                        Cumplimiento SLA FO
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/MantenimientoBacklogHFC'>
+                                        Cumplimiento SLA HFC
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/MantenimientoPuntuacionTMRF'>
+                                        Correctivo - Preventivo
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/Seguimiento'>
+                                        Seguimiento
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/TorreDeControl'>
+                                        Torre de control
+                                    </a>
+                                </div>
+                            )}
+                        </li>
 
-                        <DropDownLi>
-                            <StyledSubMenu to='/Penalizaciones'>
-                                Dirección
-                            </StyledSubMenu>
-                            <DropDownContent>
-                                <SubMenu to='/Centro_de_costos'>
-                                    Centros de costos
-                                </SubMenu>
-                                <SubMenu to='/Moviles'>
-                                    Composición móviles
-                                </SubMenu>
-                                <SubMenu to='/Compras'>
-                                    Compras
-                                </SubMenu>
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownDireccion(!showDropdownDireccion)}>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaBuilding/></span>
+                                    <span id="SubMenu-Titulo-Texto">Dirección</span>
+                                    <span id="SubMenu-Titulo-Icono2">
+                                        {
+                                            showDropdownDireccion ? <FaChevronUp /> : <FaChevronDown />
+                                        }
+                                    </span>
+                                </span>
+                            </div>
+                            {showDropdownDireccion && (
+                                <div id='SubMenu-Contenido'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/Centro_de_costos'>
+                                        Centros de costos
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/Moviles'>
+                                        Composición móviles
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/Compras'>
+                                        Compras
+                                    </a>
+                                    <a id='SubMenu-Contenido-Titulo' href='/ReportingCenter/SSTA'>
+                                        SSTA
+                                    </a>
+                                </div>
+                            )}
+                        </li>
+                    </ul>
+                </div>
+            )}
 
-                            </DropDownContent>
-                        </DropDownLi>
+            {!showMobileMenu && (
+                <div id='MenuContainerCerrado' onMouseEnter={() => setShowMobileMenu(true)}>
+                    <ul id='Menu'>
+                        <li id='SubMenu'>
+                            <a id='SubMenu-Titulo' href='/ReportingCenter'>
+                                <span id='SubMenu-Titulo-Icono'><FaHome/></span>
+                            </a>      
+                        </li>
 
-                    </Menu>
-                </IconContext.Provider>
-            </Wrapper>
-        </Container>
-    );
-}
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo'>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaFileInvoice/></span>
+                                </span>
+                            </div>
+                        </li>
 
-export default Navbar
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo'>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaIndustry/></span>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo'>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaChartLine/></span>
+                                </span>
+                            </div>
+                        </li>
+                            
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo'>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaStar/></span>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo'>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaTools/></span>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li id='SubMenu'>
+                            <div id='SubMenu-Titulo'>
+                                <span id='SubMenu-Titulo-Contenedor'>
+                                    <span id='SubMenu-Titulo-Icono'><FaBuilding/></span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            )}
+        </div>
+    )
+};
