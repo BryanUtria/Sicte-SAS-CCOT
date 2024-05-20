@@ -35,9 +35,9 @@ import TorreControl from '../pages/Mantenimiento/TorreControl';
 
 export const Rutas = () => {
   return (
-    <BrowserRouter basename="/Sicte-SAS-CCOT">
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<CCOTRoutes />} />  
+        <Route path="/Sicte-SAS-CCOT/CCOT/*" element={<CCOTRoutes />} />  
         <Route path="*" element={<Inicio />} />
       </Routes>
     </BrowserRouter>
