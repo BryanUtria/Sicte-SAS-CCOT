@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom";
 import './Navbar.css'
 import {FaBars, FaTimes, FaHome, FaFileInvoice, FaIndustry, FaChartLine, FaStar, FaTools, FaBuilding, FaChevronDown, FaChevronUp} from 'react-icons/fa';
 
@@ -11,6 +10,15 @@ export const Navbar = () => {
     const [showDropdownPuntuacion, setShowDropdownPuntuacion] = useState(false);
     const [showDropdownMantenimiento, setShowDropdownMantenimiento] = useState(false);
     const [showDropdownDireccion, setShowDropdownDireccion] = useState(false);
+
+    const closeAllDropdowns = () => {
+        setShowDropdownFacturacion(false);
+        setShowDropdownProduccion(false);
+        setShowDropdownIndicadores(false);
+        setShowDropdownPuntuacion(false);
+        setShowDropdownMantenimiento(false);
+        setShowDropdownDireccion(false);
+    };
 
     return (
         <div id='Contenedor'>
@@ -40,7 +48,11 @@ export const Navbar = () => {
                         </li>
 
                         <li id='SubMenu'>
-                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownFacturacion(!showDropdownFacturacion)}>
+                            <div id='SubMenu-Titulo' onClick={() => 
+                            {
+                                closeAllDropdowns();
+                                setShowDropdownFacturacion(!showDropdownFacturacion);
+                            }}>
                                 <span id='SubMenu-Titulo-Contenedor'>
                                     <span id='SubMenu-Titulo-Icono'><FaFileInvoice/></span>
                                     <span id="SubMenu-Titulo-Texto">Facturación</span>
@@ -76,7 +88,11 @@ export const Navbar = () => {
                         </li>
 
                         <li id='SubMenu'>
-                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownProduccion(!showDropdownProduccion)}>
+                            <div id='SubMenu-Titulo' onClick={() => 
+                            {   
+                                closeAllDropdowns();
+                                setShowDropdownProduccion(!showDropdownProduccion)
+                            }}>
                                 <span id='SubMenu-Titulo-Contenedor'>
                                     <span id='SubMenu-Titulo-Icono'><FaIndustry/></span>
                                     <span id="SubMenu-Titulo-Texto">Producción</span>
@@ -109,7 +125,11 @@ export const Navbar = () => {
                         </li>
 
                         <li id='SubMenu'>
-                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownIndicadores(!showDropdownIndicadores)}>
+                            <div id='SubMenu-Titulo' onClick={() => 
+                            {
+                                closeAllDropdowns();
+                                setShowDropdownIndicadores(!showDropdownIndicadores)
+                            }}>
                                 <span id='SubMenu-Titulo-Contenedor'>
                                     <span id='SubMenu-Titulo-Icono'><FaChartLine/></span>
                                     <span id="SubMenu-Titulo-Texto">Indicadores</span>
@@ -139,7 +159,11 @@ export const Navbar = () => {
                         </li>
                             
                         <li id='SubMenu'>
-                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownPuntuacion(!showDropdownPuntuacion)}>
+                            <div id='SubMenu-Titulo' onClick={() => 
+                            {   
+                                closeAllDropdowns();
+                                setShowDropdownPuntuacion(!showDropdownPuntuacion)
+                            }}>
                                 <span id='SubMenu-Titulo-Contenedor'>
                                     <span id='SubMenu-Titulo-Icono'><FaStar/></span>
                                     <span id="SubMenu-Titulo-Texto">Puntuación</span>
@@ -172,7 +196,11 @@ export const Navbar = () => {
                         </li>
 
                         <li id='SubMenu'>
-                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownMantenimiento(!showDropdownMantenimiento)}>
+                            <div id='SubMenu-Titulo' onClick={() => 
+                            {
+                                closeAllDropdowns();
+                                setShowDropdownMantenimiento(!showDropdownMantenimiento)
+                            }}>
                                 <span id='SubMenu-Titulo-Contenedor'>
                                     <span id='SubMenu-Titulo-Icono'><FaTools/></span>
                                     <span id="SubMenu-Titulo-Texto">Mantenimiento</span>
@@ -205,7 +233,11 @@ export const Navbar = () => {
                         </li>
 
                         <li id='SubMenu'>
-                            <div id='SubMenu-Titulo' onClick={() => setShowDropdownDireccion(!showDropdownDireccion)}>
+                            <div id='SubMenu-Titulo' onClick={() => 
+                            {
+                                closeAllDropdowns();
+                                setShowDropdownDireccion(!showDropdownDireccion)
+                            }}>
                                 <span id='SubMenu-Titulo-Contenedor'>
                                     <span id='SubMenu-Titulo-Icono'><FaBuilding/></span>
                                     <span id="SubMenu-Titulo-Texto">Dirección</span>
@@ -238,7 +270,11 @@ export const Navbar = () => {
             )}
 
             {!showMobileMenu && (
-                <div id='MenuContainerCerrado' onMouseEnter={() => setShowMobileMenu(true)}>
+                <div id='MenuContainerCerrado' onMouseEnter={() => 
+                {
+                    closeAllDropdowns();
+                    setShowMobileMenu(true)
+                }}>
                     <ul id='Menu'>
                         <li id='SubMenu'>
                             <span id='SubMenu-Titulo'>
