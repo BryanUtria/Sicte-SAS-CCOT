@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Route, Routes} from 'react-router-dom';
 import BacklogFO from '../pages/Mantenimiento/Backlog_FO';
 import BacklogHFC from '../pages/Mantenimiento/Backlog_HFC';
 import CorporativoPuntuacion from '../pages/Puntuacion/CorporativoPuntuacion';
@@ -35,21 +35,9 @@ import TorreControl from '../pages/Mantenimiento/TorreControl';
 
 export const Rutas = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/Sicte-SAS-CCOT/CCOT/*" element={<CCOTRoutes />} />  
-        <Route path="*" element={<Inicio />} />
-      </Routes>
-    </BrowserRouter>
-  );
-};
-
-const CCOTRoutes = () => {
-  return (
-    <div>
-      <Routes>
-        <Route path='*' element={<Inicio />} />
-        <Route path='/CCOT' element={<Inicio />} />
+        <Route exact path='/CCOT' element={<Inicio />} />
         <Route path='/CorporativoFinanciero' element={<CorporativoFinanciero/>} />
         <Route path='/CorporativoPuntuacion' element={<CorporativoPuntuacion />} />
         <Route path='/Centro_de_costos' element={<CentrosDeCostos />} />
@@ -81,6 +69,6 @@ const CCOTRoutes = () => {
         <Route path='/SeguimientoProyectos' element={<SeguimientoProyectos/>} />
         <Route path='/TorreDeControl' element={<TorreControl />} />
       </Routes>
-    </div>
-  )
+    </Router>
+  );
 };
