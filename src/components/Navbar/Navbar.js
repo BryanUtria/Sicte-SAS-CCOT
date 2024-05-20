@@ -32,7 +32,7 @@ export const Navbar = () => {
                 <div id='MenuContainer' className={showMobileMenu ? 'open' : 'closed'}>
                     <ul id='Menu'>
                         <li id='SubMenu'>
-                            <a id='SubMenu-Titulo' href='/CCOT'>
+                            <a id='SubMenu-Titulo' href='/Sicte-SAS-CCOT/CCOT'>
                                 <span id='SubMenu-Titulo-Icono'><FaHome/></span>
                                 <span id="SubMenu-Titulo-Texto">Inicio</span>
                             </a>      
@@ -52,22 +52,22 @@ export const Navbar = () => {
                             </div>
                             {showDropdownFacturacion && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/ConsolidadoNacionalFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/ConsolidadoNacionalFacturacion'>
                                         Consolidado nacional
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/PlaneacionFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/PlaneacionFacturacion'>
                                         Proyectos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/SeguimientoProyectos'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/SeguimientoProyectos'>
                                         Seguimiento proyectos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/CorporativoFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/CorporativoFacturacion'>
                                         Corporativo
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/MantenimientoFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/MantenimientoFacturacion'>
                                         Mantenimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/OperacionesFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/OperacionesFacturacion'>
                                         Operaciones
                                     </a>
                                 </div>
@@ -88,19 +88,19 @@ export const Navbar = () => {
                             </div>
                             {showDropdownProduccion && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/PlaneacionFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/PlaneacionFinanciero'>
                                         Proyectos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/CorporativoFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/CorporativoFinanciero'>
                                         Corporativo
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/MantenimientoFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/MantenimientoFinanciero'>
                                         Mantenimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/ReingenieriaFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/ReingenieriaFinanciero'>
                                         Reingenierias
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/OperacionesFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/OperacionesFinanciero'>
                                         Operaciones
                                     </a>
                                 </div>
@@ -121,16 +121,16 @@ export const Navbar = () => {
                             </div>
                             {showDropdownIndicadores && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/HistoricoKPI'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/HistoricoKPI'>
                                         Histórico KPI 
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/MantenimientoTecnico'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/MantenimientoTecnico'>
                                         G1 Mantenimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/Mintic'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/Mintic'>
                                         G5 MINTIC
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/NPS'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/NPS'>
                                         NPS - Contraseña: 4434
                                     </a>
                                 </div>
@@ -151,19 +151,19 @@ export const Navbar = () => {
                             </div>
                             {showDropdownPuntuacion && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/PlaneacionPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/PlaneacionPuntuacion'>
                                         Proyectos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/CorporativoPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/CorporativoPuntuacion'>
                                         Corporativo
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/MantenimientoPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/MantenimientoPuntuacion'>
                                         Mantenimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/ReingenieriasPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/ReingenieriasPuntuacion'>
                                         Reingenierias
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/OperacionesPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/OperacionesPuntuacion'>
                                         Operaciones
                                     </a>
                                 </div> 
@@ -184,19 +184,19 @@ export const Navbar = () => {
                             </div>
                             {showDropdownMantenimiento && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/MantenimientoBacklogFO'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/MantenimientoBacklogFO'>
                                         Cumplimiento SLA FO
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/MantenimientoBacklogHFC'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/MantenimientoBacklogHFC'>
                                         Cumplimiento SLA HFC
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/MantenimientoPuntuacionTMRF'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/MantenimientoPuntuacionTMRF'>
                                         Correctivo - Preventivo
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/Seguimiento'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/Seguimiento'>
                                         Seguimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/TorreDeControl'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/TorreDeControl'>
                                         Torre de control
                                     </a>
                                 </div>
@@ -217,16 +217,16 @@ export const Navbar = () => {
                             </div>
                             {showDropdownDireccion && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/Centro_de_costos'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/Centro_de_costos'>
                                         Centros de costos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/Moviles'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/Moviles'>
                                         Composición móviles
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/Compras'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/Compras'>
                                         Compras
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='/CCOT/SSTA'>
+                                    <a id='SubMenu-Contenido-Titulo' href='/Sicte-SAS-CCOT/CCOT/SSTA'>
                                         SSTA
                                     </a>
                                 </div>
