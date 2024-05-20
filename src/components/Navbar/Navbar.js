@@ -11,6 +11,8 @@ export const Navbar = () => {
     const [showDropdownMantenimiento, setShowDropdownMantenimiento] = useState(false);
     const [showDropdownDireccion, setShowDropdownDireccion] = useState(false);
 
+    const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
+
     const closeAllDropdowns = () => {
         setShowDropdownFacturacion(false);
         setShowDropdownProduccion(false);
@@ -38,7 +40,7 @@ export const Navbar = () => {
             </div>  
 
             {showMobileMenu && (
-                <div id='MenuContainer' className={showMobileMenu ? 'open' : 'closed'}>
+                <div id='MenuContainer'>
                     <ul id='Menu'>
                         <li id='SubMenu'>
                             <a id='SubMenu-Titulo' href='#/CCOT'>
@@ -65,22 +67,22 @@ export const Navbar = () => {
                             </div>
                             {showDropdownFacturacion && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/ConsolidadoNacionalFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/ConsolidadoNacionalFacturacion' onClick={toggleMobileMenu}>
                                         Consolidado nacional
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/PlaneacionFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/PlaneacionFacturacion' onClick={toggleMobileMenu}>
                                         Proyectos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/SeguimientoProyectos'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/SeguimientoProyectos' onClick={toggleMobileMenu}>
                                         Seguimiento proyectos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/CorporativoFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/CorporativoFacturacion' onClick={toggleMobileMenu}>
                                         Corporativo
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoFacturacion' onClick={toggleMobileMenu}>
                                         Mantenimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/OperacionesFacturacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/OperacionesFacturacion' onClick={toggleMobileMenu}>
                                         Operaciones
                                     </a>
                                 </div>
@@ -105,19 +107,19 @@ export const Navbar = () => {
                             </div>
                             {showDropdownProduccion && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/PlaneacionFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/PlaneacionFinanciero' onClick={toggleMobileMenu}>
                                         Proyectos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/CorporativoFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/CorporativoFinanciero' onClick={toggleMobileMenu}>
                                         Corporativo
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoFinanciero' onClick={toggleMobileMenu}>
                                         Mantenimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/ReingenieriaFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/ReingenieriaFinanciero' onClick={toggleMobileMenu}>
                                         Reingenierias
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/OperacionesFinanciero'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/OperacionesFinanciero' onClick={toggleMobileMenu}>
                                         Operaciones
                                     </a>
                                 </div>
@@ -142,16 +144,16 @@ export const Navbar = () => {
                             </div>
                             {showDropdownIndicadores && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/HistoricoKPI'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/HistoricoKPI' onClick={toggleMobileMenu}>
                                         Histórico KPI 
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoTecnico'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoTecnico' onClick={toggleMobileMenu}>
                                         G1 Mantenimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/Mintic'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/Mintic' onClick={toggleMobileMenu}>
                                         G5 MINTIC
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/NPS'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/NPS' onClick={toggleMobileMenu}>
                                         NPS - Contraseña: 4434
                                     </a>
                                 </div>
@@ -176,19 +178,19 @@ export const Navbar = () => {
                             </div>
                             {showDropdownPuntuacion && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/PlaneacionPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/PlaneacionPuntuacion' onClick={toggleMobileMenu}>
                                         Proyectos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/CorporativoPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/CorporativoPuntuacion' onClick={toggleMobileMenu}>
                                         Corporativo
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoPuntuacion' onClick={toggleMobileMenu}>
                                         Mantenimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/ReingenieriasPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/ReingenieriasPuntuacion' onClick={toggleMobileMenu}>
                                         Reingenierias
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/OperacionesPuntuacion'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/OperacionesPuntuacion' onClick={toggleMobileMenu}>
                                         Operaciones
                                     </a>
                                 </div> 
@@ -213,19 +215,19 @@ export const Navbar = () => {
                             </div>
                             {showDropdownMantenimiento && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoBacklogFO'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoBacklogFO' onClick={toggleMobileMenu}>
                                         Cumplimiento SLA FO
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoBacklogHFC'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoBacklogHFC' onClick={toggleMobileMenu}>
                                         Cumplimiento SLA HFC
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoPuntuacionTMRF'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/MantenimientoPuntuacionTMRF' onClick={toggleMobileMenu}>
                                         Correctivo - Preventivo
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/Seguimiento'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/Seguimiento' onClick={toggleMobileMenu}>
                                         Seguimiento
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/TorreDeControl'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/TorreDeControl' onClick={toggleMobileMenu}>
                                         Torre de control
                                     </a>
                                 </div>
@@ -250,16 +252,16 @@ export const Navbar = () => {
                             </div>
                             {showDropdownDireccion && (
                                 <div id='SubMenu-Contenido'>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/Centro_de_costos'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/Centro_de_costos' onClick={toggleMobileMenu}>
                                         Centros de costos
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/Moviles'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/Moviles' onClick={toggleMobileMenu}>
                                         Composición móviles
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/Compras'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/Compras' onClick={toggleMobileMenu}>
                                         Compras
                                     </a>
-                                    <a id='SubMenu-Contenido-Titulo' href='#/SSTA'>
+                                    <a id='SubMenu-Contenido-Titulo' href='#/SSTA' onClick={toggleMobileMenu}>
                                         SSTA
                                     </a>
                                 </div>
