@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Sicte-SAS-CCOT/static/css/main.ca6e2cac.css",
-    "main.js": "/Sicte-SAS-CCOT/static/js/main.dda0e2e3.js",
+    "main.js": "/Sicte-SAS-CCOT/static/js/main.f86c2c59.js",
     "static/media/01.jpg": "/Sicte-SAS-CCOT/static/media/01.90f3a9eed9bfbe9d97b2.jpg",
     "index.html": "/Sicte-SAS-CCOT/index.html",
     "main.ca6e2cac.css.map": "/Sicte-SAS-CCOT/static/css/main.ca6e2cac.css.map",
-    "main.dda0e2e3.js.map": "/Sicte-SAS-CCOT/static/js/main.dda0e2e3.js.map"
+    "main.f86c2c59.js.map": "/Sicte-SAS-CCOT/static/js/main.f86c2c59.js.map"
   },
   "entrypoints": [
     "static/css/main.ca6e2cac.css",
-    "static/js/main.dda0e2e3.js"
+    "static/js/main.f86c2c59.js"
   ]
 }
