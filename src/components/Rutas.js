@@ -37,7 +37,8 @@ export const Rutas = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path='/CCOT' element={<Inicio />} />
+        <Route path='*' element={<Inicio />} />
+        <Route path='/CCOT' element={<Inicio />} />
         <Route path='/CorporativoFinanciero' element={<CorporativoFinanciero/>} />
         <Route path='/CorporativoPuntuacion' element={<CorporativoPuntuacion />} />
         <Route path='/Centro_de_costos' element={<CentrosDeCostos />} />
