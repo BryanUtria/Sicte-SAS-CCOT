@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Sicte-SAS-CCOT/static/css/main.5d57fdb0.css",
-    "main.js": "/Sicte-SAS-CCOT/static/js/main.bff19cb2.js",
+    "main.js": "/Sicte-SAS-CCOT/static/js/main.da0bee10.js",
     "static/js/213.3acf702f.chunk.js": "/Sicte-SAS-CCOT/static/js/213.3acf702f.chunk.js",
     "static/js/732.7a8fa0dd.chunk.js": "/Sicte-SAS-CCOT/static/js/732.7a8fa0dd.chunk.js",
     "static/media/fa-solid-900.ttf": "/Sicte-SAS-CCOT/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
@@ -23,12 +23,12 @@
     "static/media/fa-v4compatibility.woff2": "/Sicte-SAS-CCOT/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/Sicte-SAS-CCOT/index.html",
     "main.5d57fdb0.css.map": "/Sicte-SAS-CCOT/static/css/main.5d57fdb0.css.map",
-    "main.bff19cb2.js.map": "/Sicte-SAS-CCOT/static/js/main.bff19cb2.js.map",
+    "main.da0bee10.js.map": "/Sicte-SAS-CCOT/static/js/main.da0bee10.js.map",
     "213.3acf702f.chunk.js.map": "/Sicte-SAS-CCOT/static/js/213.3acf702f.chunk.js.map",
     "732.7a8fa0dd.chunk.js.map": "/Sicte-SAS-CCOT/static/js/732.7a8fa0dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d57fdb0.css",
-    "static/js/main.bff19cb2.js"
+    "static/js/main.da0bee10.js"
   ]
 }
